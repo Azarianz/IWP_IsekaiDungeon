@@ -12,16 +12,27 @@ namespace FSM.STATES
         private readonly Agent_Data agent_data;
 
         //Constructor
-        public MoveState(Agent_AI context, Agent_Data data) { agent = context; agent_data = data; }
+        public MoveState(Agent_AI context, Agent_Data data) 
+        { 
+            agent = context; 
+            agent_data = data;
+        }
 
-        public void OnEnterState() { }
+        public void OnEnterState() 
+        {
+            //Debug.Log("Enter MoveState");
+        }
 
         public void DoState() 
         {
-            agent.Move(agent.transform.up, agent_data.GetAgentStats().STAT_SPEED);
+            agent.OnMove?.Invoke();
+            //Debug.Log("Do MoveState");
         }
 
-        public void OnExitState() { }
+        public void OnExitState() 
+        {
+            //Debug.Log("Exit MoveState");
+        }
     }
 
 }

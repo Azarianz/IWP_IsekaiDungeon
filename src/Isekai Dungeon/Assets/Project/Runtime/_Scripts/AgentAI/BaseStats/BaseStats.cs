@@ -7,6 +7,8 @@ namespace AI.STATS
     [CreateAssetMenu(menuName = "Add Base Unit Stats")]
     public class BaseStats : ScriptableObject
     {
+        public Sprite sprite;
+
         public float BASE_DAMAGE;
 
         [Header("BASE")]

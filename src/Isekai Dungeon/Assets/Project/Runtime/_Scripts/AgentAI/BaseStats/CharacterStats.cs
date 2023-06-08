@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace AI.STATS
 {
-    public class CharacterStats : Stats
+    public class CharacterStats : Stats, IDamageable
     {
         //Constructor (Takes in baseStat which stores base classes/race stat)
         public CharacterStats(BaseStats baseStat)
@@ -54,5 +54,29 @@ namespace AI.STATS
         public float STAT_LIGHTNING_RESISTANCE { get; set; }
         public float STAT_DEBUFF_RESISTANCE { get; set; }
         public float STAT_DEATH_RESISTANCE { get; set; }
+
+        //UNIT VARIABLES
+
+
+        public float CalculateDamage()
+        {
+            float minDamage = STAT_DAMAGE * 0.9f;
+            float maxDamage = STAT_DAMAGE * 1.1f;
+
+            float finalDamage = Random.Range(minDamage, maxDamage);
+
+            if(Random.RandomRange(0, 100) >= STAT_CRITCHANCE)
+            {
+                finalDamage *= 1.5f;   //x1.5 crit dmg modifier
+            }
+
+            return finalDamage;
+        }
+
+        public void ReceiveDamage(float dmg)
+        {
+            float finalDmg = dmg * (100 / (100 + STAT_DEFENSE));
+            STAT_HEALTH -= finalDmg;
+        }
     }
 }

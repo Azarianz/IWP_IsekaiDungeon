@@ -14,14 +14,21 @@ namespace FSM.STATES
         //Constructor
         public IdleState(Agent_AI context, Agent_Data data) { agent = context; agent_data = data; }
 
-        public void OnEnterState() { }
+        public void OnEnterState() 
+        {
+            //Debug.Log("Enter IdleState");
+        }
 
         public void DoState() 
         {
-
+            agent.OnIdle?.Invoke();
+            //Debug.Log("Do IdleState");
         }
 
-        public void OnExitState() { }
+        public void OnExitState() 
+        {
+            //Debug.Log("Exit IdleState");
+        }
     }
 }
 

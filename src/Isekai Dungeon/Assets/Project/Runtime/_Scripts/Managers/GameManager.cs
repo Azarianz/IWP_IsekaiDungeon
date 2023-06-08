@@ -1,5 +1,7 @@
 using System;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Nice, easy to understand enum-based game manager. For larger and more complex games, look into
@@ -10,6 +12,8 @@ public class GameManager : StaticInstance<GameManager> {
     public static event Action<GameState> OnAfterStateChanged;
 
     public GameState State { get; set; }
+
+    public Flock PlayerTeam, EnemyTeam;
 
     // Kick the game off with the first state
     void Start() => ChangeState(GameState.PlayerSetup);
@@ -56,20 +60,20 @@ public class GameManager : StaticInstance<GameManager> {
 
     public void GameUpdate()
     {
-        // Do some start setup, could be environment, cinematics etc
 
-        // Eventually call ChangeState again with your next state
+    }
 
-        //ChangeState(GameState.GameStart);
+    public void GameLose()
+    {
+        
     }
 
     public void Paused()
     {
-        // Do some start setup, could be environment, cinematics etc
-
-        // Eventually call ChangeState again with your next state
-
-        //ChangeState(GameState.GameStart);
+        if (Input.GetKey(KeyCode.P))
+        {
+            ChangeState(GameState.GameStart);
+        }
     }
 }
 
