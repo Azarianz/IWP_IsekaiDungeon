@@ -6,10 +6,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Flock/Behaviour/Avoidance")]
 public class AvoidanceBehaviour : FilteredFlockBehaviour
 {
-    public float avoidanceRange = 1.5f;
-    Vector2 currentVelocity;
-    public float agentSmoothTime = 0.5f;
-
     //Seperation
     public override Vector2 CalculateMove(Agent_AI agent, List<Transform> context, Flock flock)
     {
@@ -35,7 +31,7 @@ public class AvoidanceBehaviour : FilteredFlockBehaviour
                     float distance = avoidanceForce.magnitude;
 
                     // Scale the avoidance force based on distance and relative velocity
-                    avoidanceForce *= Mathf.Clamp01(avoidanceRange - distance) / distance;
+                    avoidanceForce *= Mathf.Clamp01(flock.avoidanceRange - distance) / distance;
 
                     // Apply avoidance force
                     avoidanceMove += avoidanceForce;

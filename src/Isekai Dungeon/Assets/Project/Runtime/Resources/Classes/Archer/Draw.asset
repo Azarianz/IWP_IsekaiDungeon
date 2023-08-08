@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23fd4a700a2b2946a1498088de6a734, type: 3}
+  m_Name: Draw
+  m_EditorClassIdentifier: 
+  abilityName: Draw
+  skillPriority: 1
+  skill_icon: {fileID: -521236810, guid: 7aca072a42a14ec4b9ebf97763bf6f35, type: 3}
+  projectilePrefab: {fileID: 5846545000943750757, guid: 055d423d6bd54b743aa232436e680e72, type: 3}
+  healthCost: 0
+  manaCost: 0
+  fx1: {fileID: 0}

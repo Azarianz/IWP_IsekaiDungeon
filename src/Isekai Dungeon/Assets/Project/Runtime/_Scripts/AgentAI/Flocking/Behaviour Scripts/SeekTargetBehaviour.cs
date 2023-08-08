@@ -2,75 +2,18 @@ using AI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
-using static UnityEngine.GraphicsBuffer;
 
 [CreateAssetMenu(menuName = "Flock/Behaviour/Seek Target Behaviour")]
 
 public class SeekTargetBehaviour : FilteredFlockBehaviour
 {
-    //public override Vector2 CalculateMove(Agent_AI agent, List<Transform> context, Flock flock)
-    //{
-    //    if (context.Count == 0 && agent.IsAttacking())
-    //        return Vector2.zero;    // No context, break
-
-    //    List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
-    //    float closestDistance = flock.detectionRadius;
-    //    float attackRange = agent.AttackRange;
-    //    Agent_AI target = null;
-    //    Vector2 target_pos = Vector2.zero;
-    //    Vector2 move = Vector2.zero;
-
-    //    foreach (Transform item in filteredContext)
-    //    {
-    //        float distance = Vector2.Distance(agent.transform.position, item.position);
-
-    //        if (distance < closestDistance)
-    //        {
-    //            closestDistance = distance;
-    //        }
-
-    //        target = item.GetComponent<Agent_AI>();
-    //        target_pos = item.position;
-    //    }
-
-    //    if(target != null)
-    //    {
-    //        agent.Agent_Target = target;
-    //        Vector2 direction = target_pos - (Vector2)agent.transform.position;
-    //        move += direction;
-
-    //        float squaredDistance = 9999;
-
-    //        if (target_pos != Vector2.zero)
-    //        {
-    //            squaredDistance = ((Vector3)target_pos - agent.transform.position).sqrMagnitude;
-    //        }
-
-    //        //Debug.Log(squaredDistance);
-
-    //        if (squaredDistance < attackRange)
-    //        {
-    //            agent.IsAttacking(true);
-    //            //Set available target for attack
-    //            return Vector2.zero;
-    //        }
-    //    }
-    //    else
-    //    {
-    //        agent.Agent_Target = null;
-    //        agent.IsAttacking(false);
-    //    }
-
-    //    return move;
-    //}
     public override Vector2 CalculateMove(Agent_AI agent, List<Transform> context, Flock flock)
     {
-        if (context.Count == 0 && agent.IsAttacking())
+        if (context.Count == 0)
             return Vector2.zero;    // No context, break
 
         List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
-        float attackRange = agent.AttackRange;
+        float attackRange = agent.AgentData.getAttackRange;
         Agent_AI target = null;
         Vector2 targetPos = Vector2.zero;
         Vector2 move = Vector2.zero;
@@ -95,10 +38,6 @@ public class SeekTargetBehaviour : FilteredFlockBehaviour
                 return Vector2.zero;  // Stop moving, within attack range
             }
         }
-
-        // No targets within attack range
-        agent.Agent_Target = null;
-        agent.IsAttacking(false);
 
         return move;
     }

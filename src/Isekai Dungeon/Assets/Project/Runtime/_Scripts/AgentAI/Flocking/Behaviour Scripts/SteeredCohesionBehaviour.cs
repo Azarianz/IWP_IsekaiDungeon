@@ -7,9 +7,7 @@ using UnityEngine;
 public class SteeredCohesionBehaviour : FilteredFlockBehaviour
 {
     Vector2 currentVelocity;
-    public float agentSmoothTime = 0.5f;
     public float speedMultiplier = 1f; // Speed multiplier based on the distance
-
 
     public override Vector2 CalculateMove(Agent_AI agent, List<Transform> context, Flock flock)
     {
@@ -41,8 +39,8 @@ public class SteeredCohesionBehaviour : FilteredFlockBehaviour
 
             // Speed adjustment based on distance
             float distanceMultiplier = Mathf.Clamp01(cohesionMove.magnitude / flock.cohesionRange);
-            float adjustedSpeed = agent.moveSpeed * (1f + speedMultiplier * distanceMultiplier);
-            cohesionMove = cohesionMove.normalized * adjustedSpeed;
+            //float adjustedSpeed = agent.moveSpeed * (1f + speedMultiplier * distanceMultiplier);
+            cohesionMove = cohesionMove.normalized * agent.moveSpeed;
 
             return cohesionMove;
         }

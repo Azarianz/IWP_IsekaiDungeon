@@ -8,6 +8,10 @@ namespace AI.STATS
     public class BaseStats : ScriptableObject
     {
         public Sprite sprite;
+        public RuntimeAnimatorController animator;
+        public ClassSystem agentClass;
+
+        public string BASE_RACE;
 
         public float BASE_DAMAGE;
 
@@ -58,7 +62,7 @@ namespace AI.STATS
 
         private DEBUFF_RESIST BASE_DEBUFF_RESISTANCE_SETTING;
 
-        public float BASE_DEBUFF_RESISITANCE()
+        public float BASE_DEBUFF_RESISTANCE()
         {
             switch (BASE_DEBUFF_RESISTANCE_SETTING)
             {

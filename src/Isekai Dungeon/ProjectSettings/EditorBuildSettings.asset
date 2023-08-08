@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Project/Runtime/Scenes/Main_Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Project/Runtime/Scenes/Game_Town.unity
-    guid: a07766e39fb7f6c47b24adca0cd5546d
+    path: Assets/Project/Runtime/Scenes/Game_Town2.5D.unity
+    guid: 6e7a4540543bbd4458fd2fc9d95c35e4
   - enabled: 1
     path: Assets/Project/Runtime/Scenes/Game_Dungeon.unity
     guid: aeb4ee9053e24814fb10a7646d205fe2

@@ -10,9 +10,9 @@ public class PreferredDirectionBehaviour : FlockBehavior
 
     public FlockBehavior[] behaviours;
     public float[] weights;
+    private float[] defaultWeights;
 
     Vector2 currentVelocity;
-    public float agentSmoothTime = 0.5f;
 
     public override Vector2 CalculateMove(Agent_AI agent, List<Transform> context, Flock flock)
     {
@@ -28,32 +28,40 @@ public class PreferredDirectionBehaviour : FlockBehavior
 
         if (!agent.IsAttacking())
         {
-            Vector2 prefDir = ((Vector2)agent.transform.position + preferredDirection) - (Vector2)agent.transform.position;
-            move += prefDir.normalized;
-        }
-
-        //iterate through behaviours
-        for (int i = 0; i < behaviours.Length; i++)
-        {
-            Vector2 partialMove = behaviours[i].CalculateMove(agent, context, flock) * weights[i];
-
-            if (partialMove != Vector2.zero)
+            //iterate through behaviours
+            for (int i = 0; i < behaviours.Length; i++)
             {
-                if (partialMove.sqrMagnitude > weights[i] * weights[i])
-                {
-                    partialMove.Normalize();
-                    partialMove *= weights[i];
-                }
+                Vector2 partialMove = behaviours[i].CalculateMove(agent, context, flock) * weights[i];
 
-                move += partialMove;
+                if (partialMove != Vector2.zero)
+                {
+                    if (partialMove.sqrMagnitude > weights[i] * weights[i])
+                    {
+                        partialMove.Normalize();
+                        partialMove *= weights[i];
+                    }
+
+                    move += partialMove;
+                }
+            }
+
+            if (agent.Agent_Target == null)
+            {
+                Vector2 prefDir = ((Vector2)agent.transform.position + preferredDirection) - (Vector2)agent.transform.position;
+                move += prefDir.normalized;
             }
         }
 
-        if(agent.IsAttacking())
-        {
-            move = Vector2.zero;
-        }
-
         return move;
+    }
+
+    public void Start()
+    {
+        InitializeDefaultWeights();
+    }
+
+    public void InitializeDefaultWeights()
+    {
+        defaultWeights = weights;
     }
 }

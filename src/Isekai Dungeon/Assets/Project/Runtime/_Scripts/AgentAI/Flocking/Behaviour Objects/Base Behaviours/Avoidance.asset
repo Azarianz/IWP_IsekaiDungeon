@@ -13,4 +13,3 @@ MonoBehaviour:
   m_Name: Avoidance
   m_EditorClassIdentifier: 
   filter: {fileID: 11400000, guid: d2d3f93884fbb5140b2a3d62fbba11be, type: 2}
-  avoidanceRange: 1.5

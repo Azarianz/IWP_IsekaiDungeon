@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06aeb594720fdd840b4a59f96184cff4, type: 3}
+  m_Name: Holy Priestess
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 2036006304, guid: 1a1f07f5e86362a4a8d407f43aac20eb, type: 3}
+  animator: {fileID: 9100000, guid: 4134784b706c65a4ea797508fe8a3924, type: 2}
+  agentClass: {fileID: 11400000, guid: 02a55b5b9a33fa9439d85bff70514fe4, type: 2}
+  BASE_RACE: Hero
+  BASE_DAMAGE: 8
+  BASE_HEALTH: 120
+  BASE_HEALTHREGEN: 0.5
+  BASE_MANA: 50
+  BASE_MANAREGEN: 1
+  BASE_DEFENSE: 12
+  BASE_SPEED: 8
+  BASE_ACCURACY: 100
+  BASE_CRITCHANCE: 10
+  BASE_MELEEPROFICIENCY: 100
+  BASE_RANGEPROFICIENCY: 100
+  BASE_MAGICPROFICIENCY: 100
+  ATTACK_ELEMENT: 0
+  BASE_FIRE_RESISTANCE: 0
+  BASE_WATER_RESISTANCE: 0
+  BASE_EARTH_RESISTANCE: 0
+  BASE_LIGHTNING_RESISTANCE: 0
+  BASE_DEATH_RESISTANCE: 35

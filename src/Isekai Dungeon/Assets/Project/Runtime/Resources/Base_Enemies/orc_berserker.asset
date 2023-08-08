@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06aeb594720fdd840b4a59f96184cff4, type: 3}
+  m_Name: orc_berserker
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 2093588556, guid: 3cc55c01fe3338a4eb559a701a5483d3, type: 3}
+  animator: {fileID: 9100000, guid: 616406365309f8c478ee89f5f05c5b3a, type: 2}
+  agentClass: {fileID: 11400000, guid: 601c8e7d8c552d94680bcd4416bcc9ca, type: 2}
+  BASE_RACE: Orc
+  BASE_DAMAGE: 0
+  BASE_HEALTH: 1
+  BASE_HEALTHREGEN: 0.5
+  BASE_MANA: 50
+  BASE_MANAREGEN: 1
+  BASE_DEFENSE: 0
+  BASE_SPEED: 8.5
+  BASE_ACCURACY: 80
+  BASE_CRITCHANCE: 10
+  BASE_MELEEPROFICIENCY: 100
+  BASE_RANGEPROFICIENCY: 100
+  BASE_MAGICPROFICIENCY: 100
+  ATTACK_ELEMENT: 0
+  BASE_FIRE_RESISTANCE: 0
+  BASE_WATER_RESISTANCE: 0
+  BASE_EARTH_RESISTANCE: 0
+  BASE_LIGHTNING_RESISTANCE: 0
+  BASE_DEATH_RESISTANCE: 20

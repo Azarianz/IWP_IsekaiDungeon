@@ -7,23 +7,28 @@ public class InventoryController : MonoBehaviour
 {
     public static InventoryController Inventory_Instance;
 
+    [SerializeField]
     private List<InventoryItem> item_inventory = new List<InventoryItem>();
+    [SerializeField]
     private List<Agent_Data> unit_inventory = new List<Agent_Data>();
     public int maxItemSlot = 20, maxUnitSlot = 30;
-    private int gold = 0, science = 0;
+    public int gold, science, stamina, maxStamina = 20, day = 1;
+
+    public List<InventoryItem> GetItemInventory() {  return item_inventory; }
+    public List<Agent_Data> GetUnitInventory() { return unit_inventory; }
 
     #region Item_Inventory
 
-    private void Awake()
+    private void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         if (Inventory_Instance != null & Inventory_Instance != this)
         {
             Destroy(this.gameObject);
         }
         else
         {
-            Inventory_Instance = this; 
+            Inventory_Instance = this;
+            DontDestroyOnLoad(this);
         }
     }
 
@@ -58,16 +63,6 @@ public class InventoryController : MonoBehaviour
 
         Debug.LogFormat("Item {0} does not exist!", itemToRemove.item_data.name);
         return false;
-    }
-
-    public List<InventoryItem> GetItemInventory()
-    {
-        return item_inventory;
-    }
-
-    public List<Agent_Data> GetUnitInventory()
-    {
-        return unit_inventory;
     }
 
     #endregion
@@ -119,28 +114,46 @@ public class InventoryController : MonoBehaviour
 
     #endregion
 
-    public void RewardGold(int reward)
+    #region Add_Currencies (Gold, Science, Stamina, Day)
+    public bool AddGold(int reward)
     {
-        gold += reward;
-    }
-
-    public bool DeductGold(int cost)
-    {
-        if(gold >= cost)
+        int finalVal = gold + reward;
+        if (finalVal >= 0)
         {
-            gold -= cost;
+            gold = finalVal;
             return true;
         }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
-    public void DeductScience(int cost)
+    public bool AddScience(int cost)
     {
-        science -= cost;
+        int finalVal = science + cost;
+        if (finalVal >= 0)
+        {
+            science = finalVal;
+            return true;
+        }
+        return false;
     }
 
+    public bool AddStamina(int val)
+    {
+        int finalVal = stamina + val;
+        if (finalVal >= 0)
+        {
+            stamina = finalVal;
+            return true;
+        }
+
+        return false;
+    }
+
+    public void NextDay()
+    {
+        day++;
+        stamina = maxStamina;
+    }
+    #endregion
 
 }

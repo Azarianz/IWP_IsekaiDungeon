@@ -1,0 +1,1113 @@
+{
+    "floors": [
+        {
+            "floorNumber": 1,
+            "stats": {
+                "goblin": {
+                  "STAT_DAMAGE": 10,
+                  "STAT_HEALTH": 50,
+                  "STAT_HEALTHREGEN": 0,
+                  "STAT_MANA": 20,
+                  "STAT_MANAREGEN": 0,
+                  "STAT_DEFENSE": 5,
+                  "STAT_SPEED": 9,
+                  "STAT_ACCURACY": 70,
+                  "STAT_CRITCHANCE": 5,
+                  "STAT_MELEEPROFICIENCY": 80,
+                  "STAT_RANGEPROFICIENCY": 80,
+                  "STAT_MAGICPROFICIENCY": 80,
+                  "ATTACK_ELEMENT": "NONE",
+                  "STAT_FIRE_RESISTANCE": 0,
+                  "STAT_WATER_RESISTANCE": 0,
+                  "STAT_EARTH_RESISTANCE": 0,
+                  "STAT_LIGHTNING_RESISTANCE": 0,
+                  "STAT_DEBUFF_RESISTANCE": 0,
+                  "GOLD_REWARD": 25,
+                  "EXP_REWARD": 80
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 1, "y": 1.75, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 2, "y": 0, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3, "y": 3, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4, "y": -0.75, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0, "y": 0, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 2.25, "y": 1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 2.25, "y": -0.75, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4.75, "y": 3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4.5, "y": -3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 5.5, "y": 0, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0, "y": 0, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0, "y": 2, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0, "y": 4.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.5, "y": 4, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.5, "y": 1.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 6.75, "y": 3, "z": 0 } }
+                    ]
+                }
+
+            ]
+        },
+        
+        {
+            "floorNumber": 2,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 12,
+                    "STAT_HEALTH": 80,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 80
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 2.5, "y": -1, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 6, "y": 2, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10, "y": -2.5, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 45, "y": -5, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 38, "y": -6, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 40, "y": -2.5, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 35, "y": 2, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 40, "y": -1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 35, "y": -3.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 20, "y": -1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 17, "y": -5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10, "y": -6, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 12.5, "y": -2.5, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 11.5, "y": -3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 13.25, "y": -0.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 16, "y": -6, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 17.75, "y": 2, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 21.75, "y": -1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 23.25, "y": -5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 29.25, "y": 2, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 35, "y": -4.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 28.5, "y": -2.75, "z": 0 } }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "floorNumber": 3,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 12,
+                    "STAT_HEALTH": 100,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 80
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 15,
+                    "STAT_HEALTH": 150,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 115
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 16.75, "y": -6, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 12.41, "y": -4.75, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 13.25, "y": -0.25, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 17.75, "y": 2, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 20.25, "y": -3.5, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 17.5, "y": -1, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 15, "y": -8.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 11.41, "y": -6, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 13, "y": -1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 13.25, "y": 2.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 17.75, "y": 4, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 16.25, "y": 0.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 15.75, "y": -3.75, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior",  "position": { "x": 0, "y": 0, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior",  "position": { "x": 3.5, "y": 2.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior",  "position": { "x": 3.75, "y": -2.75, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 8, "y": -2.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 7.5, "y": 2.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 11.25, "y": 0.25, "z": 0 } }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "floorNumber": 4,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 14,
+                    "STAT_HEALTH": 120,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 80
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 18,
+                    "STAT_HEALTH": 250,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 115
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 2, "y": 0, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.5, "y": 2.5, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.75, "y": -2.75, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 8, "y": -2.5, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.5, "y": 2.25, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.75, "y": 0.25, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 3.35, "y": 3.45, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.8, "y": 5.95, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7, "y": 0.7, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0, "y": 3.53, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.11, "y": -4.31, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 3.61, "y": -6.81, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 7.36, "y": -9.56, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 9.23, "y": -6.73, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 0.15, "y": 1.94, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.6, "y": 4.44, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.9, "y": -0.8, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 8.1, "y": -0.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 0.2, "y": -6.4, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 3.7, "y": -3.9, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4.2, "y": -3.9, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4, "y": -9.15, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 7.7, "y": -4.15, "z": 0 } }
+                    ]
+                }
+            ]        
+        },
+
+        {
+            "floorNumber": 5,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 14,
+                    "STAT_HEALTH": 150,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 80
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 20,
+                    "STAT_HEALTH": 275,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 115
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": -0.75, "y": 2.15, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 3.3, "y": 0.3, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": -2, "y": -3.23, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 2.4, "y": -5.4, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": -2.37, "y": 5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 2.05, "y": 3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 3.77, "y": 6, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": -2.85, "y": -8.6, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 1.9, "y": -6.37, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4.3, "y": -8.42, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 27.15, "y": 0.85, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 30.7, "y": -0.67, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 27.15, "y": -2.9, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 9.15, "y": 0.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.5, "y": -1.75, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10, "y": -3.4, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 30, "y": 5.3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 35, "y": 4.41, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 28, "y": 1.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 33.56, "y": 0.35, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 30.11, "y": -3.1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 35, "y": -4, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 29, "y": -7.55, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 33.7, "y": -8.4, "z": 0 } }
+                    ]
+                }
+            ]    
+        },
+
+        {
+            "floorNumber": 6,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 16,
+                    "STAT_HEALTH": 200,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 80
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 20,
+                    "STAT_HEALTH": 300,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 115
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.9, "y": 4.5, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 5.4, "y": 0.15, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 5.5, "y": -2.75, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.71, "y": -7.12, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 13.05, "y": 3.2, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10.3, "y": 0.45, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10.2, "y": -3.35, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 13.05, "y": -6.05, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 1, "y": -2.8, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": -1.9, "y": -0.3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0.6, "y": 2.13, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 11, "y": 2, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 8.5, "y": 4.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 9.5, "y": -7.6, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 7, "y": -5.15, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 19, "y": -6.2, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 15.8, "y": -3.7, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 18.65, "y": 2.8, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 21.15, "y": 0.3, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 3.55, "y": -1.45, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.4, "y": -3.93, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.7, "y": 0.8, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 12.75, "y": 1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 16, "y": 3.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 15.75, "y": -1.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 12.75, "y": -4.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 15.75, "y": -7, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 26.55, "y": -1.21, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 29.81, "y": 1.05, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 29.55, "y": -3.71, "z": 0 } }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "floorNumber": 7,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 16,
+                    "STAT_HEALTH": 220,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 80
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 20,
+                    "STAT_HEALTH": 340,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 115
+                },
+                "orc": {
+                    "STAT_DAMAGE": 55,
+                    "STAT_HEALTH": 450,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 8.5,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 120,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 60,
+                    "EXP_REWARD": 225
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 7.9, "y": 4.5, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 5.4, "y": 0.15, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 5.5, "y": -2.75, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.71, "y": -7.12, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 13.05, "y": 3.2, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 10.3, "y": 0.45, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 10.2, "y": -3.35, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 13.05, "y": -6.05, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 1, "y": -2.8, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": -1.9, "y": -0.3, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0.6, "y": 2.13, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 11, "y": 2, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 8.5, "y": 4.5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 9.5, "y": -7.6, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 7, "y": -5.15, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 19, "y": -6.2, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 15.8, "y": -3.7, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 18.65, "y": 2.8, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 21.15, "y": 0.3, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 13.8, "y": -3.7, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 16.65, "y": 2.8, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 3.55, "y": -1.45, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.4, "y": -3.93, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 6.7, "y": 0.8, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 12.75, "y": 1, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 16, "y": 3.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 15.75, "y": -1.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 12.75, "y": -4.5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 15.75, "y": -7, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 18.75, "y": -7, "z": 0 } }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "floorNumber": 8,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 16,
+                    "STAT_HEALTH": 270,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 100
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 30,
+                    "STAT_HEALTH": 335,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 145
+                },
+                "orc": {
+                    "STAT_DAMAGE": 60,
+                    "STAT_HEALTH": 550,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 8.5,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 120,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 60,
+                    "EXP_REWARD": 225
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 1.38, "y": -3.23, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": -0.36, "y": -0.48, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4.13, "y": 0.02, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 5.9, "y": -2.73, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 15.88, "y": 2.77, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 20.38, "y": 2.52, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 17.63, "y": -6.98, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 22.13, "y": -7.23, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 32.38, "y": -2.48, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 30.63, "y": 0.27, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 35.31, "y": 0.02, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10.5, "y": 5.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 15, "y": 5.75, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 19.5, "y": 5.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 24, "y": 5.75, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10.5, "y": -8.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 15, "y": -8.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 19.5, "y": -8.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 24, "y": -8.25, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 42.25, "y": -3.75, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 42.25, "y": 3, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 44.5, "y": -0.5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 46.5, "y": 3, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 46.5, "y":-4, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 6.5, "y": 0, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.75, "y": 2.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.75, "y": -2.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10, "y": -4.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10, "y": 4, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 24.5, "y": 6.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 28.75, "y": 6.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 32.3, "y": 6.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 28.75, "y": -8.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 24.5, "y": -8.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 33, "y": -8.25, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 52.5, "y": 2, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 57.5, "y": 2, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 57.5, "y": -2, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 52.5, "y": -2, "z": 0 } }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "floorNumber": 9,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 16,
+                    "STAT_HEALTH": 280,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 100
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 30,
+                    "STAT_HEALTH": 340,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 125
+                },
+                "orc": {
+                    "STAT_DAMAGE": 60,
+                    "STAT_HEALTH": 600,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 8.5,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 120,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 60,
+                    "EXP_REWARD": 245
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 0, "y": 0, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 1, "y": -3.25, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 4.25, "y": 0, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 5.75, "y": -3.25, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10, "y": -3, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 9, "y": 0.25, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 32.5, "y": -2.75, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 27.75, "y": -2.75, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 31, "y": 0.5, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 26.75, "y": 0.5, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 2.75, "y": -1.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 4.25, "y": 1, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 4.5, "y": -4.25, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 6.25, "y": -1.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 8.25, "y": 1.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 8.25, "y": -4.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10, "y": -1.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 23.75, "y": 2.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 27.25, "y": 4, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 29.75, "y": 1.25, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 23.25, "y": -6.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 26.75, "y": -4.75, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 30.75, "y": -7, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 14, "y": 0.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 16.75, "y": -1.72, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 14, "y": -3.72, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 27.5, "y": 1.03, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 27.5, "y": -3.22, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 30, "y": -1.22, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 33, "y": 1.28, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 33, "y": -3.22, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 48.62, "y": 1.1, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 48.62, "y": -3.15, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 51.37, "y": -1.15, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 54.12, "y": 1.35, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 54.12, "y": -3.15, "z": 0 } }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "floorNumber": 10,
+            "stats": {
+                "goblin": {
+                    "STAT_DAMAGE": 20,
+                    "STAT_HEALTH": 300,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 9,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 25,
+                    "EXP_REWARD": 100
+                },
+                "goblin_thief": {
+                    "STAT_DAMAGE": 30,
+                    "STAT_HEALTH": 350,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 10,
+                    "STAT_ACCURACY": 80,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 80,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 35,
+                    "EXP_REWARD": 125
+                },
+                "orc": {
+                    "STAT_DAMAGE": 60,
+                    "STAT_HEALTH": 670,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 8.5,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 120,
+                    "STAT_RANGEPROFICIENCY": 80,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 60,
+                    "EXP_REWARD": 245
+                },
+                "orc_axethrower": {
+                    "STAT_DAMAGE": 48,
+                    "STAT_HEALTH": 800,
+                    "STAT_HEALTHREGEN": 0,
+                    "STAT_MANA": 20,
+                    "STAT_MANAREGEN": 0,
+                    "STAT_DEFENSE": 5,
+                    "STAT_SPEED": 8.5,
+                    "STAT_ACCURACY": 70,
+                    "STAT_CRITCHANCE": 5,
+                    "STAT_MELEEPROFICIENCY": 120,
+                    "STAT_RANGEPROFICIENCY": 120,
+                    "STAT_MAGICPROFICIENCY": 80,
+                    "ATTACK_ELEMENT": "NONE",
+                    "STAT_FIRE_RESISTANCE": 0,
+                    "STAT_WATER_RESISTANCE": 0,
+                    "STAT_EARTH_RESISTANCE": 0,
+                    "STAT_LIGHTNING_RESISTANCE": 0,
+                    "STAT_DEBUFF_RESISTANCE": 0,
+                    "GOLD_REWARD": 80,
+                    "EXP_REWARD": 380
+                }
+            },
+            "classes": {
+                "Warrior": {
+                    "attackRange": 15,
+                    "Abilities": [
+                        "Melee"
+                    ]
+                },
+                "Warrior2": {
+                    "attackRange": 150,
+                    "Abilities": [
+                        "Melee",
+                        "Throw Axe"
+                    ]
+                }
+            },
+            "waves": [
+                {
+                    "waveNumber": 1,
+                    "enemies": [
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": -7.75, "y": -0.5, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": -5.5, "y": -3, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": -4.25, "y": 1.5, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": -2.25, "y": -0.75, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10.5, "y": -2.5, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 10.5, "y": 1.25, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 14, "y": -4.25, "z": 0 } },
+                        { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 14.5, "y": 2, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 18.5, "y":-2.25, "z": 0 } },
+                        { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 18.75, "y": 1, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 31.25, "y": -0.5, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 33.5, "y": -3, "z": 0 } },
+                        { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 34.25, "y": 1.5, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 2,
+                    "enemies": [
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.25, "y": -2.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 7.25, "y": 0.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10.5, "y": -2.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 10.5, "y": 0.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 14.25, "y": -2.5, "z": 0 } },
+                      { "unitType": "goblin", "unitClass": "Warrior", "position": { "x": 14.25, "y": 0.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 17.5, "y": -2.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 17.5, "y": 0.5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 21.25, "y": -2, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 21.5, "y": 1, "z": 0 } },
+                      { "unitType": "orc_axethrower", "unitClass": "Warrior2", "position": { "x": 31.5, "y": -0.35, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 39.75, "y": 5.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 37, "y": 3.5, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 39.75, "y": 2, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 39.75, "y": -4.75, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 37, "y": -6.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 39.75, "y": -7.75, "z": 0 } }
+                    ]
+                },
+                {
+                    "waveNumber": 3,
+                    "enemies": [
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 5.75, "y": 2.25, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 5.75, "y": 4.75, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 9.25, "y": 2.25, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 9.25, "y": 5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 13.5, "y": 3.75, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 23.5, "y": -7.75, "z": 0 } },
+                      { "unitType": "goblin_thief", "unitClass": "Warrior", "position": { "x": 23.5, "y": -5.25, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 27, "y": -7.75, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 27, "y": -5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 30.75, "y": -6, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 49, "y": -4.5, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 49, "y": 2, "z": 0 } },
+                      { "unitType": "orc_axethrower", "unitClass": "Warrior2", "position": { "x": 51.5, "y": -1, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 54, "y": -5.75, "z": 0 } },
+                      { "unitType": "orc", "unitClass": "Warrior", "position": { "x": 54, "y": 3.5, "z": 0 } }
+                    ]
+                }
+            ]
+        }
+      
+    ]
+}
+  

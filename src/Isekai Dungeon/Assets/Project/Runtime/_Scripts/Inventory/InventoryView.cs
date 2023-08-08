@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using GluonGui.WorkspaceWindow.Views.WorkspaceExplorer.Explorer;
 using AI;
 using AI.STATS;
+using IsekaiDungeon;
 
 public class InventoryView : MonoBehaviour
 {
@@ -23,6 +23,11 @@ public class InventoryView : MonoBehaviour
 
     public InventoryItem debugItem1, debugItem2;
     public BaseStats debugStat1, debugStat2;
+    public ClassSystem debugClass;
+
+    public TextMeshProUGUI unitInventorySize, itemInventorySize;
+
+    public TextMeshProUGUI gold_text, science_text, stamina_text, day_text;
 
     private void Start()
     {
@@ -36,10 +41,18 @@ public class InventoryView : MonoBehaviour
             GameObject childTransform = item_content.transform.GetChild(i).gameObject;
             item_list.Add(childTransform);
         }
+
+        RefreshCounter();
     }
 
     private void Update()
     {
+        if (Input.GetKeyUp(KeyCode.G))
+        {
+            inventoryController.AddGold(100);
+            RefreshCounter();
+        }
+
         if(Input.GetKeyUp(KeyCode.Alpha1))
         {
             inventoryController.AddItem(debugItem1.item_data);
@@ -68,7 +81,7 @@ public class InventoryView : MonoBehaviour
 
         //if (Input.GetKeyUp(KeyCode.Alpha4))
         //{
-        //    Agent_Data unitToAdd = new Agent_Data(debugStat1);
+        //    Agent_Data unitToAdd = new Agent_Data(debugStat1, );
         //    inventoryController.AddUnit(unitToAdd);
         //    if (item_content.activeSelf)
         //    {
@@ -77,7 +90,7 @@ public class InventoryView : MonoBehaviour
         //}
         //if (Input.GetKeyUp(KeyCode.Alpha5))
         //{
-        //    Agent_Data unitToAdd = new Agent_Data(debugStat2);
+        //    Agent_Data unitToAdd = new Agent_Data(debugStat2, );
         //    inventoryController.AddUnit(unitToAdd);
         //    if (item_content.activeSelf)
         //    {
@@ -109,6 +122,7 @@ public class InventoryView : MonoBehaviour
     {
         UpdateInventoryView();
         StartCoroutine(ViewItemList());
+        itemInventorySize.text = itemInventory.Count + " / 20";
     }
 
     IEnumerator ViewItemList()
@@ -145,27 +159,51 @@ public class InventoryView : MonoBehaviour
     {
         UpdateUnitView();
         StartCoroutine(ViewUnitList());
+        unitInventorySize.text = unitInventory.Count + " / 30";
     }
 
     IEnumerator ViewUnitList()
     {
-        yield return new WaitForEndOfFrame(); // Wait for the end of the frame to ensure proper UI update
-
-        Debug.Log(item_list.Count);
-
-        foreach(GameObject unit in unit_list)
+        if(unit_list.Count > 0)
         {
-            Destroy(unit);
+            foreach (GameObject unit in unit_list)
+            {
+                Destroy(unit);
+            }
+            unit_list.Clear();
         }
-        unit_list.Clear();
+
+        yield return new WaitForEndOfFrame(); // Wait for the end of the frame to ensure proper UI update
 
         for (int i = 0; i < unitInventory.Count; i++)
         {
             GameObject go = Instantiate(unitPrefab, unit_content.transform);
-            go.GetComponentInChildren<TextMeshProUGUI>().text = (i + 1).ToString();
-            go.transform.GetChild(0).GetComponent<Image>().sprite = unitInventory[i].unit_icon;
+            go.transform.Find("Index Slot").GetComponentInChildren<TextMeshProUGUI>().text = (i + 1).ToString();
+
+            UnitSelect_Inventory unitSlot = go.GetComponent<UnitSelect_Inventory>();
+            unitSlot.SetUnitData(unitInventory[i]);
             unit_list.Add(go);
         }
+    }
+
+    public void ViewUnitStatistics()
+    {
+        
+    }
+
+    public void NextDay()
+    {
+        InventoryController.Inventory_Instance.NextDay();
+
+        RefreshCounter();
+    }
+
+    public void RefreshCounter()
+    {
+        gold_text.text = inventoryController.gold.ToString();
+        science_text.text = inventoryController.science.ToString();
+        stamina_text.text = inventoryController.stamina.ToString() + " / " + inventoryController.maxStamina.ToString();
+        day_text.text = "DAY " + inventoryController.day.ToString();
     }
 
 }

@@ -1,19 +1,17 @@
 using System;
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-/// <summary>
-/// Nice, easy to understand enum-based game manager. For larger and more complex games, look into
-/// state machines. But this will serve just fine for most games.
-/// </summary>
 public class GameManager : StaticInstance<GameManager> {
     public static event Action<GameState> OnBeforeStateChanged;
     public static event Action<GameState> OnAfterStateChanged;
 
     public GameState State { get; set; }
 
-    public Flock PlayerTeam, EnemyTeam;
+    public Flock playerTeam;
+    public Flock[] enemies;
+
+    public UI_DungeonSetup setupUI;
+    public UI_DungeonGame gameUI;
 
     // Kick the game off with the first state
     void Start() => ChangeState(GameState.PlayerSetup);
@@ -24,9 +22,13 @@ public class GameManager : StaticInstance<GameManager> {
         State = newState;
         switch (newState) {
             case GameState.PlayerSetup:
+                gameUI.ShowUI(false);
+                setupUI.ShowUI(true);
                 PlayerSetup();
                 break;
             case GameState.GameStart:
+                gameUI.ShowUI(true);
+                setupUI.ShowUI(false);
                 GameUpdate();
                 break;
             case GameState.Paused:
@@ -45,6 +47,30 @@ public class GameManager : StaticInstance<GameManager> {
         Debug.Log($"New state: {newState}");
     }
 
+    private void Update()
+    {
+        switch (State)
+        {
+            case GameState.PlayerSetup:
+                PlayerSetup();
+                break;
+            case GameState.GameStart:
+                GameUpdate();
+                break;
+            case GameState.Paused:
+                Paused();
+                break;
+            case GameState.Win:
+                GameWin();
+                break;
+            case GameState.Lose:
+                GameLose();
+                break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(State), State, null);
+        }
+    }
+
     public void PlayerSetup() {
         // Do some start setup, could be environment, cinematics etc
 
@@ -55,10 +81,29 @@ public class GameManager : StaticInstance<GameManager> {
 
     public void GameStart()
     {
-        ChangeState(GameState.GameStart); 
+        ChangeState(GameState.GameStart);
     }
 
     public void GameUpdate()
+    {
+        //Debug.Log("Game Update");
+
+        if (playerTeam.IsFlockDead())
+        {
+            ChangeState(GameState.Lose);
+        }
+        else if (enemies[enemies.Length - 1].IsFlockDead())
+        {
+            ChangeState(GameState.Win);
+        }
+
+        if (Input.GetKey(KeyCode.P))
+        {
+            ChangeState(GameState.Paused);
+        }
+    }
+
+    public void GameWin()
     {
 
     }
@@ -77,10 +122,6 @@ public class GameManager : StaticInstance<GameManager> {
     }
 }
 
-/// <summary>
-/// This is obviously an example and I have no idea what kind of game you're making.
-/// You can use a similar manager for controlling your menu states or dynamic-cinematics, etc
-/// </summary>
 [Serializable]
 public enum GameState {
     PlayerSetup = 0,

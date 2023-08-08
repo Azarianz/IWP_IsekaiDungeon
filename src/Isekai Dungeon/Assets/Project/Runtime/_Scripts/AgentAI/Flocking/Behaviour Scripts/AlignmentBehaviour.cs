@@ -2,13 +2,11 @@ using AI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 [CreateAssetMenu(menuName = "Flock/Behaviour/Alignment")]
 public class AlignmentBehaviour : FilteredFlockBehaviour
 {
     Vector2 currentVelocity;
-    public float agentSmoothTime = 0.5f;
 
     public override Vector2 CalculateMove(Agent_AI agent, List<Transform> context, Flock flock)
     {
@@ -34,7 +32,7 @@ public class AlignmentBehaviour : FilteredFlockBehaviour
             }
 
             alignmentMove /= context.Count;
-            alignmentMove = Vector2.SmoothDamp(agent.transform.up, alignmentMove, ref currentVelocity, agentSmoothTime);
+            alignmentMove = Vector2.SmoothDamp(agent.transform.up, alignmentMove, ref currentVelocity, flock.alignmentSmoothTime);
 
             return alignmentMove;
         }

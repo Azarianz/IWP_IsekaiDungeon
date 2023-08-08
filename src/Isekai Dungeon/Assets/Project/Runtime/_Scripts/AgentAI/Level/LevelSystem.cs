@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace AI.STATS
 {
+    [Serializable]
     public class LevelSystem
     {
+        private Agent_Data agent_data;
         private int LVL;
         private int XP;
         private int XPToLevelUp;
@@ -20,11 +23,12 @@ namespace AI.STATS
             return (int)((LVL * BaseXPToLevelUp) * XPToLevelUpMultiplier); 
         }
 
-        public LevelSystem()    
+        public LevelSystem(Agent_Data data)    
         {
             LVL = 0;
             XP = 0;
-            XPToLevelUp = BaseXPToLevelUp;  
+            XPToLevelUp = BaseXPToLevelUp;
+            agent_data = data;
         }
 
         public void AddExperience(int amt)
@@ -34,8 +38,7 @@ namespace AI.STATS
             while (XP >= XPToLevelUp)
             {
                 // Enough experience to level up
-                LVL++;
-                XP -= XPToLevelUp;
+                LevelUp();
             }
              
             if (XP < 0)
@@ -43,6 +46,24 @@ namespace AI.STATS
                 //XP does not fall below 0
                 XP = 0;
             }
+        }
+
+        public void SetLevel(int number)
+        {
+            LVL = number;
+
+            for(int i = 0; i < number; i++)
+            {
+                XPToLevelUp = GetXPToNextLevel();
+            }
+        }
+        
+        public void LevelUp()
+        {
+            XP -= XPToLevelUp;
+            int nextLvl = LVL + 1;
+            SetLevel(nextLvl);
+            agent_data.LevelUpStats();
         }
 
     }

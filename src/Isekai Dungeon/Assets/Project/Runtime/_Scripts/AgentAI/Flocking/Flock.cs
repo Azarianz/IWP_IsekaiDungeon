@@ -1,12 +1,8 @@
 using AI;
-using FSM.STATES;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditorInternal;
 using UnityEngine;
-using static Codice.Client.Common.WebApi.WebApiEndpoints;
 
 public class Flock : MonoBehaviour
 {
@@ -15,12 +11,13 @@ public class Flock : MonoBehaviour
     public FlockBehavior moveBehaviour;
 
     [SerializeField]
-    List<Agent_AI> agents = new List<Agent_AI>();
+    private List<Agent_AI> agents = new List<Agent_AI>();
+    public List<Agent_AI> GetAgents { get { return agents; }  }
 
     [Range(1f, 100f)]
     public float acceleration = 60f;
-    [Range(1f, 5f)]
-    public float maxSpeed = 5f;
+    [Range(1f, 50f)]
+    public float maxSpeed = 5;
     [Range(0f, 5f)]
     public float avoidanceRange = 1.5f;
     [Range(0f, 10f)]
@@ -29,6 +26,8 @@ public class Flock : MonoBehaviour
     public float cohesionRange = 1.5f;
     [Range(0f, 5f)]
     public float alignmentRange = 1.5f;
+    [Range(0f, 5f)]
+    public float alignmentSmoothTime = 1.5f;
 
     [Range(1f, 100f)]
     public float detectionRadius = 30.0f;
@@ -39,13 +38,13 @@ public class Flock : MonoBehaviour
 
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
     public float SquareNeighbourRadius { get { return squareNeighbourRadius; } }
+    public bool IsEnemy;
 
     [Header("Debug Draw Settings")]
     public int segments = 16;
     private bool isInitialized = false;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Initialize()
     {
         squareMaxSpeed = maxSpeed * maxSpeed;
         squareNeighbourRadius = avoidanceRange * avoidanceRange;
@@ -61,16 +60,43 @@ public class Flock : MonoBehaviour
 
         isInitialized = true;
     }
+
+    public void Awake()
+    {
+        if (IsEnemy)
+        {
+            squareMaxSpeed = maxSpeed * maxSpeed;
+            squareNeighbourRadius = avoidanceRange * avoidanceRange;
+            squareAvoidanceRadius = squareNeighbourRadius * avoidanceStrength * avoidanceStrength;
+
+            agents = GetComponentsInChildren<Agent_AI>().ToList();
+
+            foreach (Agent_AI agent in agents)
+            {
+                AddAgentsToTrack(agent.gameObject);
+                agent.AssignFlock(this);
+
+                if (IsEnemy)
+                {
+                    agent.SetUnitData(new Agent_Data(agent.baseStat, agent.charClass));
+                }
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (agents.Count > 0)
+        if (!isInitialized)
+            return;
+
+        if (agents.Count > 0 && !DungeonManager.instance.hasDungeonEnded)
         {
             foreach (Agent_AI agent in agents)
             {
                 if (agent == null)
                 {
-                    if(cam != null)
+                    if (cam != null)
                     {
                         cam.targets.RemoveAll(target => target == null);
                     }
@@ -79,14 +105,14 @@ public class Flock : MonoBehaviour
                     break;
                 }
 
-                List<Transform> context = GetNearbyObjects(agent);
+                List<Transform> context = agent.GetNearbyObjects();
 
                 // Calculate the move using the assigned FlockBehavior
                 Vector3 move = Vector3.zero;
                 move = moveBehaviour.CalculateMove(agent, context, this);
 
                 Vector3 agentVelocity = agent.AgentRigidBody.velocity;
-                agentVelocity = Vector3.Lerp(agentVelocity, move, acceleration * Time.fixedDeltaTime);
+                agentVelocity = move.normalized * maxSpeed;
 
                 //If greater than max speed
                 if (agentVelocity.sqrMagnitude > squareMaxSpeed)
@@ -95,23 +121,23 @@ public class Flock : MonoBehaviour
                 }
 
                 agent.Move(agentVelocity);
-                Debug.DrawLine(agent.transform.position, move, Color.cyan);
+                Debug.DrawLine(agent.transform.position, agent.transform.position + move, Color.cyan);
+            }
+        }
+        else
+        {
+            foreach (Agent_AI agent in agents)
+            {
+                if (agent != null)
+                {
+                    agent.Agent_Target = null;
+                    agent.AgentRigidBody.velocity = Vector2.zero;
+                }
             }
         }
     }
 
-    List<Transform> GetNearbyObjects(Agent_AI agent)
-    {
-        List<Transform> context = new List<Transform>();
-        Collider2D[] contextColliders = Physics2D.OverlapCircleAll(agent.transform.position, detectionRadius);
-        foreach(Collider2D c in contextColliders){
-            if (c != agent.AgentCollider){
-                context.Add(c.transform);
-            }
-        }
 
-        return context;
-    }
 
     public void DebugDrawOverlapCircle(Vector2 position, Color color, float radius)
     {
@@ -155,6 +181,28 @@ public class Flock : MonoBehaviour
         }
     }
 
+    public void RemoveAgentFromFlock(Agent_AI agent)
+    {
+        if (agent.AgentFlock == this)
+        {
+            agents.Remove(agent);
+            agent.AgentFlock = null;
+
+            if (cam != null && cam.targets.Contains(agent.transform))
+            {
+                cam.targets.Remove(agent.transform);
+            }
+
+
+            agent.AgentCollider.enabled = false;
+            agent.enabled = false;
+        }
+        else
+        {
+            Debug.Log("Agent: " + agent + " is not part of this flock: " + agents);
+        }
+    }
+
     public void AddAgentsToTrack(GameObject agent)
     {
         //TO CHANGE LATER
@@ -174,6 +222,5 @@ public class Flock : MonoBehaviour
         {
             return false;
         }
-
     }
 }
